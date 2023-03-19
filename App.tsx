@@ -3,6 +3,7 @@ import Home from './src/home';
 import About from './src/about';
 import Person from './src/person';
 import PersonLists from './src/PersonList';
+import Status from './src/status';
 
 export default function App() {
   const data = {
@@ -35,6 +36,7 @@ export default function App() {
       <About value="ankit sharma about page" number={60} />
       <Person user={data} />
       <PersonLists userslist={PersonList} />
+      <Status status='error' />
     </View>
   );
 }
