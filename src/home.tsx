@@ -1,12 +1,14 @@
 import {View, Text} from 'react-native';
 
-interface H {
+interface Home {
   name: string;
+  flag:boolean
 }
-export default function Home (props: H)  {
+export default function Home (props: Home)  {
   return (
     <View>
-      <Text>{props.name}</Text>
+      {props.flag == true ? (<Text>{props.name}</Text>):(<Text>not log in</Text>)}
+      
     </View>
   );
 };
